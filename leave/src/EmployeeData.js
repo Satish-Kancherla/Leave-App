@@ -62,7 +62,7 @@ const Employee = () => {
 
     
     const[content,setContent] = useState({
-        projectname: "", employeename: "",shifttimings: "",startdate: "",enddate:"",numberofdays:"",description:"",managername:""
+        projectname: "", employeename: "",shifttimings: "",leavetype: "" ,startdate: "",enddate:"",numberofdays:"",description:"",managername:""
        });
        const[projects,setProjects]=useState({projectname: ""});
        const[disable, setDisable]=useState('typing');
@@ -159,6 +159,13 @@ const Employee = () => {
                {shifts.map((sh,index)=>(
                 <option key= { index} value={sh.name}>{sh.name}</option>
                ))}
+            </select></td></tr>
+            <tr><td><span >Leave Type</span></td><td>
+               <select name="leavetype" id="leavetype" value={content.leavetype} onChange={handleInputs} >
+               <option disable="true"  hidden>Select Leave Type</option>
+              <option value="Sick">Sick</option>
+              <option value="LOP">LOP</option>
+              <option value="Casual">Casual</option>
             </select></td></tr>
                    
                 <tr><td><span >Start Date</span></td><td>
