@@ -1,0 +1,409 @@
+body {
+    margin: 0;padding: 0;box-sizing: border-box;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+  }
+  
+  .adminpage1 h1{
+    display: flex;justify-content: center;
+    margin: 10px 0;padding: 10px;color: #12372A;font-weight: bolder;
+  }
+  .adminpage-content1{
+    display: flex;justify-content: center;text-align: center;margin: 0 50px;padding: 0 50px;
+  }
+  .updatepage-content{
+    display: flex;justify-content: center;text-align: center;align-items: center;
+  }
+  .updatepage-table{
+    border-spacing:0 15px; border-collapse: collapse;
+  }
+  .update-btn{
+    display: flex;justify-content: center;margin-top: 20px;font-size: 18px;
+  }
+  .update-btn button{
+    background: #12372A;border: none;border-radius: 5px;width: 150px;height: 30px;
+  }
+  .update-btn button a{
+    color: white;text-decoration: none;
+  }
+  .update-btn button:hover{
+    background-color: #006c46;
+  }
+  .adminpage-table1{
+    border-spacing:0 15px; border-collapse: collapse;
+  }
+  .adminpage hr{
+    height: 2px;background-color: black;margin-bottom: 20px;border: 1px solid 12372A;
+  }
+  .heading1 {
+    background-color:#12372A ;
+    Color:white; width:100px;border:1px solid black;padding:10px;
+  }
+  .data1{
+    width:150px;border:1px solid black;padding:5px;font-weight: bold;
+  }
+  .search1{
+    display: flex;justify-content: center;
+  }
+  
+  .search1 input{
+    font-size: 15px; border-radius: 5px;width:300px;border: 2px solid black;height: 30px;
+    font-weight: bold;margin:0 20px;padding-left: 10px;
+  }
+  .sort1 .sort-option{
+    outline: none;font-size: 15px; border-radius: 5px;border: 2px solid black;
+     padding: 5px;background-color: white;color: black;font-weight: bold;
+  }
+  .sort1 .button1{
+    outline: none;font-size: 15px; border-radius: 5px;width:100px;border: none;margin: 0 10px;
+     padding: 5px;background-color: #12372A;color: white;font-weight: bold;height: 35px;
+  }
+  .sort1 .button1:hover{
+    background-color: #006c46;color: white;
+  }
+  .btn1{
+    margin:0 10px;
+    width:100px;height: 35px;background-color: #12372A;color: white;font-weight: bold;
+    outline: none; border: none;border-radius: 5px;font-size: 15px;
+  }
+  .btn1:hover{
+    background-color: #006c46;color: white;
+  }
+  .date1{
+    display: flex;justify-content: center;margin: 10px;align-items: center;
+  }
+  .data2{
+    width:100px;border:1px solid black;padding:5px;font-weight: bold;font-size: 15px;
+  }
+  .date-button1{
+    background-color: white;color: #12372A;border: 2px solid #12372A;
+    border-radius: 5px;margin: 0 10px;font-weight: bold;height: 200px;width:80px; font-size: 15px;
+  }
+  .date-button1:hover{
+    background-color: #006c46;color: white;
+  }
+  .date-button1:active{
+    background-color: #006c46;color: white;
+  }
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width:912px) {
+    .sort1 .button1{
+      outline: none;font-size: 15px; border-radius: 5px;width:100px;border: none;margin: 0 10px;
+       padding: 5px;background-color: #12372A;color: white;font-weight: bold;height: 35px;
+       margin-left:150px;
+    }
+    .heading1 {
+      background-color:#12372A /* green */;font-size: 13px;
+      Color:white; width:80px;border:1px solid black;padding:20px;
+    }
+    .data1{
+      width:100px;border:1px solid black;padding:5px;font-weight: bold;font-size: 13px;
+    }
+    
+    
+    .sort1 .sort-option{
+      outline: none;border: none;font-size: 15px; border-radius: 5px;width:100px;
+       padding: 5px;background-color: #006c46;color: white;font-weight: bold;height: 35px;
+    }
+    
+    .btn1{
+      width:100px;height: 35px;background-color: #12372A;color: white;font-weight: bold; border: none;border-radius: 5px;
+    }
+  }
+  @media screen and (max-width:870px) {
+    
+    .heading1 {
+      background-color:#12372A /* green */;font-size: 11px;
+      Color:white; width:80px;border:1px solid black;padding:20px;
+    }
+    .data1{
+      width:100px;border:1px solid black;padding:5px;font-weight: bold;font-size: 11px;
+    }
+    .data1{
+      width:70px;border:1px solid black;padding:5px;font-weight: bold;font-size: 11px;
+    }
+    .update-btn{
+      display: flex;justify-content: center;margin-top: 20px;font-size: 12px;
+    }
+    .update-btn button{
+      background: #12372A;border: none;border-radius: 5px;width: 100px;height: 30px;
+    }
+  }
+  @media screen and (max-width:801px) {
+    .heading1 {
+      background-color:#12372A /* green */;font-size: 12px;
+      Color:white; width:80px;border:1px solid black;padding:20px;
+    }
+    .data1{
+      width:100px;border:1px solid black;padding:5px;font-weight: bold;font-size: 12px;
+    }
+    .data1{
+      width:70px;border:1px solid black;padding:5px;font-weight: bold;font-size: 12px;
+    }
+  }
+  @media screen and (max-width:774px) {
+    .adminpage-table1{
+      border-spacing:0 5px; border-collapse: collapse;
+    }
+    .heading1 {
+      background-color:#12372A /* green */;font-size: 10px;
+      Color:white; width:80px;border:1px solid black;padding:10px;
+    }
+    .data1{
+      width:100px;border:1px solid black;padding:5px;font-weight: bold;font-size: 10px;
+    }
+    .data2{
+      width:70px;border:1px solid black;padding:5px;font-weight: bold;font-size: 10px;
+    }
+    .sort1 .sort-option{
+      outline: none;border: none;font-size: 10px; border-radius: 5px;width:100px;
+       padding: 5px;background-color: #006c46;color: white;font-weight: bold;height: 35px;
+    }
+    
+    .btn1{
+      width:100px;height: 35px;background-color: #12372A;font-size: 10px;
+      color: white;font-weight: bold; border: none;border-radius: 5px;
+    }
+    .sort1 .button1{
+      outline: none;font-size: 10px; border-radius: 5px;width:100px;border: none;margin: 0 10px;
+       padding: 5px;background-color: #12372A;color: white;font-weight: bold;height: 35px;
+    }
+    .save{
+      display: flex;justify-content: center;margin: 20px;
+    }
+    .save-button{
+      width:100px;height: 35px;background-color: #12372A;color: white;
+      font-weight: bold; border: none;border-radius: 5px;font-size: 10px;
+      
+    }
+    .save-button:active{
+      background-color: #006c46;color: white;
+    }
+  }
+  @media screen and (max-width:584px) {
+    .adminpage1 h1{
+      display: flex;justify-content: center;
+      margin: 10px 10px;color: #12372A;font-size: 20px;margin-left: 180px;
+    }
+    .adminpage1 hr{
+      height: 2px;margin-left:95px;width: 100%;
+      border-radius: 10px;background-color: black;margin-bottom: 20px;
+    }
+    .adminpage-table1{
+      border-spacing:0 5px; border-collapse: collapse;margin-left: 220px;
+    }
+    .heading1 {
+      background-color:#12372A /* green */;font-size: 12px;
+      Color:white; width:80px;border:1px solid black;padding:7px;
+    }
+    .data1{
+      width:100px;border:1px solid black;padding:5px;font-weight: bold;font-size: 12px;
+    }
+    .data2{
+      width:70px;border:1px solid black;padding:5px;font-weight: bold;font-size: 12px;
+    }
+    .sort1 .sort-option{
+      outline: none;border: none;font-size: 8px; border-radius: 5px;width:90%;
+       padding: 5px;background-color: #12372A;color: white;font-weight: bold;height: 20px;
+    }
+    
+    .btn1{
+      width:70px;background-color: #12372A;font-size: 8px; outline: none;height: 25px;
+      color: white;font-weight: bold; border: none;border-radius: 5px;padding: 5px;text-align: center;
+    }
+    .sort1 .button1{
+      outline: none;font-size: 8px; border-radius: 5px;width:70px;border: none;
+       padding: 5px;background-color: #12372A;color: white;font-weight: bold;height: 20px;margin-left: -80px;
+    }
+    .save{
+      display: flex;justify-content: center;margin: 20px;
+    }
+    .save-button{
+      width:100px;height: 20px;background-color: #12372A;color: white;
+      font-weight: bold; border: none;border-radius: 5px;font-size: 8px;
+      
+    }
+    .save-button:active{
+      background-color: #006c46;color: white;
+    }
+    .update-btn{
+      display: flex;justify-content: center;margin-top: 20px;font-size: 8px;
+    }
+    .update-btn button{
+      background: #12372A;border: none;border-radius: 5px;width: 80px;height: 20px;
+    }
+  }
+  
+  @media screen and (max-width:512px) {
+    .adminpage1 h1{
+      display: flex;justify-content: center;
+      margin: 10px 10px;color: #12372A;font-size: 20px;margin-left: 100px;
+    }
+    .adminpage{
+      width: 500px;
+    }
+    .adminpage-content1{
+      display: flex;justify-content: center;text-align: center;
+    }
+  
+    .adminpage-table1{
+       border-collapse: collapse;margin-left: 50px;
+    }
+    .adminpage1 hr{
+        height: 2px;margin-left:60px;
+        border-radius: 10px;background-color: black;margin-bottom: 20px;
+      }
+    .heading1 {
+      background-color:#12372A ;
+      Color:white; border:1px solid black;font-size: 10px;
+    }
+   
+    .data1 {
+      width:90px;border:1px solid black;padding:5px;font-weight: bold;font-size: 10px;
+    }
+    .data2{
+      width:70px;border:1px solid black;padding:5px;font-weight: bold;font-size: 10px;
+    }
+    
+    .sort1 .sort-option{
+      outline: none;border: none;font-size: 8px; border-radius: 5px;width:100%;
+       padding: 5px;background-color: #006c46;color: white;font-weight: bold;height: 20px;
+    }
+    .sort1 .button1{
+        outline: none;font-size: 8px; border-radius: 5px;width:70px;border: none;
+         padding: 5px;background-color: #12372A;color: white;font-weight: bold;height: 20px;
+         margin-left: 80px;
+      }
+    .btn1{
+      width:70px;height: 22px;background-color: #12372A;font-size: 8px;
+      color: white;font-weight: bold; border: none;border-radius: 5px;
+    }
+    .update-btn{
+      display: flex;justify-content: center;margin-top: 20px;font-size: 8px;
+    }
+    .update-btn button{
+      background: #12372A;border: none;border-radius: 5px;width: 70px;height: 20px;
+    }
+  }
+  @media screen and (max-width:430px) {
+    /*  .adminpage1{
+         margin-left: 50px;
+     } */
+     .adminpage1 h1{
+       display: flex;justify-content: center;
+       color: white;font-size: 20px;
+       margin-left: 305px;
+     }
+    
+     .adminpage-content1{
+       display: flex;justify-content: center;text-align: center;margin: 0 5px;
+       margin-left: 240px;
+     }
+   
+     .adminpage-table1{
+      border-collapse: collapse;margin-left: 85px;
+   }
+ 
+     .adminpage1 hr{
+       height: 2px;width: 0%;margin-left: 200px;
+       border-radius: 10px;background-color: black;
+     }
+     .heading1 {
+       background-color:#12372A ;
+       Color:white; border:1px solid black;font-size: 14px;
+     }
+    
+     .data1 {
+       width:60px;border:1px solid black;padding:5px;font-weight: bold;font-size: 12px;
+     }
+     .data2{
+       width:50px;border:1px solid black;padding:5px;font-weight: bold;font-size: 12px;
+     }
+    
+    
+     .sort1 .sort-option{
+       outline: none;border: none;font-size: 8px; border-radius: 5px;width:100%;
+        padding: 5px;background-color: #006c46;color: white;font-weight: bold;height: 20px;
+     }
+     
+     .btn1{
+       background-color: #12372A;color: white;border-radius: 5px;
+       width:70px;height: 25px;font-size: 10px;
+         
+     }
+     .sort1 .button1{
+       outline: none;font-size: 8px; border-radius: 5px;width:70px;border: none;margin: 0 10px;
+        padding: 5px;background-color: #12372A;color: white;font-weight: bold;height: 25px;
+        
+     }
+     
+     .update-btn{
+       display: flex;justify-content: center;margin-top: 20px;font-size: 8px;
+     }
+     .update-btn button{
+       background: #12372A;border: none;border-radius: 5px;width: 80px;height: 20px;
+     }
+   }
+  @media screen and (max-width:390px) {
+   /*  .adminpage1{
+        margin-left: 50px;
+    } */
+    .adminpage1 h1{
+      display: flex;justify-content: center;
+      margin: 10px 0; color: white;font-size: 20px;
+     
+    }
+   
+    .adminpage-content1{
+      display: flex;justify-content: center;text-align: center;margin: 0 5px;
+      margin-left: 275px;
+    }
+  
+    .adminpage-table1{
+      border-collapse: collapse;margin-left: 105px;
+   }
+
+    .adminpage1 hr{
+      height: 2px;width: 0%;margin-left: 200px;
+      border-radius: 10px;background-color: black;
+    }
+    .heading1 {
+      background-color:#12372A ;
+      Color:white; border:1px solid black;font-size: 14px;
+    }
+   
+    .data1 {
+      width:60px;border:1px solid black;padding:5px;font-weight: bold;font-size: 12px;
+    }
+    .data2{
+      width:50px;border:1px solid black;padding:5px;font-weight: bold;font-size: 12px;
+    }
+   
+   
+    .sort1 .sort-option{
+      outline: none;border: none;font-size: 8px; border-radius: 5px;width:100%;
+       padding: 5px;background-color: #006c46;color: white;font-weight: bold;height: 20px;
+    }
+    
+    .btn1{
+      background-color: #12372A;color: white;border-radius: 5px;
+      width:70px;height: 25px;font-size: 10px;
+        
+    }
+    .sort1 .button1{
+      outline: none;font-size: 8px; border-radius: 5px;width:70px;border: none;margin: 0 10px;
+       padding: 5px;background-color: #12372A;color: white;font-weight: bold;height: 25px;
+       
+    }
+    
+    .update-btn{
+      display: flex;justify-content: center;margin-top: 20px;font-size: 8px;
+    }
+    .update-btn button{
+      background: #12372A;border: none;border-radius: 5px;width: 80px;height: 20px;
+    }
+  }
