@@ -24,7 +24,7 @@ const Jan = () => {
     
     const fetchData = async()=>{
         try{
-            const result = await axios("http://localhost:8083/users");
+            const result = await axios("http://13.48.57.155:8083/users");
             setData(result.data);
             setAllData(result.data);
             setFilterdata(result.data);
