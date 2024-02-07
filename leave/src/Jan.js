@@ -50,7 +50,7 @@ const Jan = () => {
 
     const generatePDF= useReactToPrint({
         content: ()=>conponentPDF.current,
-        documentTitle:"EmployeeData",
+        documentTitle:"EmployeeLeaves",
     });
 
     const handleSelect = (date) => {
@@ -102,7 +102,7 @@ const Jan = () => {
 			        <th className='heading1' name="startdate">START DATE </th>
                     <th className='heading1' name="enddate">END DATE </th>
                     <th className='heading1' name="numberofdays">NUMBER OF DAYS </th>
-			        <th className='heading1' name="description">DESCRIPTION </th>
+			        <th className='heading1' name="description">REASON </th>
 			        <th className='heading1' name="managername">MANAGER NAME </th>
                     <th className='heading1' name="status">STATUS </th>
                     </tr>
@@ -118,7 +118,7 @@ const Jan = () => {
                                 <td className='data1' name="employeename" value={data.employeename} onChange={handleInputs}>{user.employeename}</td>
                                 <td className='data1' name="projectname" value={data.projectname} onChange={handleInputs}>{user.projectname}</td>
                                 <td className='data1' name="shifttimings" value={data.shifttimings} onChange={handleInputs}>{user.shifttimings}</td>
-                                <td className='data' name="leavetype"  value={data.leavetype} onChange={handleInputs}>{user.leavetype}</td>                                
+                                <td className='data1' name="leavetype"  value={data.leavetype} onChange={handleInputs}>{user.leavetype}</td>                                
                                 <td className='data1' name="startdate" value={data.startdate} onChange={handleInputs}>{date1.toLocaleDateString()}</td>
                                 <td className='data1' name="enddate" value={data.enddate} onChange={handleInputs}>{date2.toLocaleDateString()}</td>
                                 <td className='data1' name="numberofdays" value={data.numberofdays} onChange={handleInputs}>{user.numberofdays}</td> 
