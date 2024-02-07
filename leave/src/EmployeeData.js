@@ -2,8 +2,8 @@ import React from 'react'
 import "./employeedata.css";
 import { useState } from 'react';
 import axios from "axios";
-// import emailjs from '@emailjs/browser';
-// import Swal from 'sweetalert2';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 const Employee = () => {
 
@@ -101,30 +101,30 @@ const Employee = () => {
             
        
 
-    // const serviceId = 'service_gznakse';
-    // const templateId = 'template_kapoqcs';
-    // const publicKey = '1ncgCtZIX8ryxescF';
+    const serviceId = 'service_fxoz4k3';
+    const templateId = 'template_1eb9yag';
+    const publicKey = 'XSwKGhu_Vrg7y2Z5Q';
 
-    // const templateParams = {
-    //   from_name: employee,
-    //   to_name: 'Harika',
+    const templateParams = {
+      from_name: employee,
+      to_name: 'Harika',
 
-    // };
+    };
 
-    // emailjs.send(serviceId, templateId, templateParams, publicKey)
-    //   .then((response) => {
-    //     console.log('Email sent successfully!', response);
-    //   })
-    //   .catch((error) => {
-    //     console.error('Error sending email:', error);
-    //   });
-    // Swal.fire({
-    //     title: "Sent",
-    //     text: "Your request has been sent for approval",
-    //     icon: "success",
-    //   });
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log('Email sent successfully!', response);
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+      });
+    Swal.fire({
+        title: "Sent",
+        text: "Your request has been sent for approval",
+        icon: "success",
+      });
 
-    // setTimeout(function(){window.location.reload();},4000);
+    setTimeout(function(){window.location.reload();},4000);
       
     }
      return (
@@ -157,7 +157,7 @@ const Employee = () => {
                <select name="shifttimings" id="shifttimings" value={content.shifttimings} onChange={handleInputs} >
                <option disable="true"  hidden>Select Shift Timings</option>
                {shifts.map((sh,index)=>(
-                <option key= { index} value={sh.name}>{sh.name}</option>
+                <option key= {index} value={sh.name}>{sh.name}</option>
                ))}
             </select></td></tr>
             <tr><td><span >Leave Type</span></td><td>
@@ -197,13 +197,17 @@ const Employee = () => {
            </form> 
                    </div>	       	
                    <div className="button">
-                       <button type="submit" onClick={handleSubmit} /* disabled={content.employeename.length===0 || 
-                                       content.projectname.length===0 ||                                     
-                                       content.shifttimings.length===0 ||
-                                       content.holidaydate.length===0 ||
-                                       content.description.length===0 ||
-                                       content.managername.length===0 ||
-                                       disable==='submitted'} */>Submit</button>
+                       <button type="submit" onClick={handleSubmit} 
+                        disabled={content.employeename.length===0 || 
+                                    content.projectname.length===0 ||                                     
+                                    content.shifttimings.length===0 ||
+                                    content.leavetype.length===0 ||
+                                    content.startdate.length===0 ||
+                                    content.enddate.length===0 ||
+                                    content.numberofdays.length===0 ||
+                                    content.description.length===0 ||
+                                    content.managername.length===0 ||
+                                    disable==='submitted'}>Submit</button>
                    </div>	
 
                </div>
