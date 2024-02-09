@@ -11,7 +11,10 @@ const db = mysql.createPool({
   host            : 'acq-emp-db.crmeuqwsiwsg.eu-north-1.rds.amazonaws.com',
   password        : 'accentiqa123',
   database        : 'acq-leave'
-
+ /*    user            : 'root',
+  host            : 'localhost',
+  password        : '',
+  database        : 'employee' */
 });
 
 app.get('/',(req,res)=>{
